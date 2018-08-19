@@ -1,368 +1,455 @@
-{ 
-
-  "listItems":{
-    
-     "textInputLabel":"Text Input",
-     "textInput":"Text Input",
-     "numberInputLabel": "Number Input",
-     "numberInput": "Number Input",
-     "selectInputLabel":"Select input",
-     "buttonText": "Submit",
-     "background":"assets/images/background/28.jpg",
-     "RadioButtonTitle": "Radio Button",
-     "SelectItems": [
-                    {
-                        "id": 31,
-                        "title": "Choose address"
-                    },
-                    {
-                        "id": 32,
-                        "title": "222 Duffield Street"
-                    },
-                    {
-                        "id": 34,
-                        "title": "198 Clark Street"
-                    },
-                    {
-                        "id": 33,
-                        "title": "588 Kenmore Terrace"
-                    }
-                ],
-
-      "toggle": {
-            "title": "Toggle",
-            "items": [
-                {
-                    "id": 0,
-                    "title": "United Kingdom",
-                    "isChecked": true
-                },
-                {
-                    "id": 1,
-                    "title": "South Africa",
-                    "isChecked": false
-                },
-                {
-                    "id": 2,
-                    "title": "Qatar",
-                    "isChecked": false
-                },
-                {
-                    "id": 3,
-                    "title": "Philippines",
-                    "isChecked": true
-                },
-                {
-                    "id": 4,
-                    "title": "New Zealand",
-                    "isChecked": true
-                }
-            ]
-        },
-        "radio": {
-          "title" : "Radio Buttons",
-            "selectedItem": 3,
-            "items" : [
-              {"id" : 1, "title": "The Gambia"},
-              {"id" : 2, "title": "Ecuador"},
-              {"id" : 4, "title": "Czechia"},
-              {"id" : 3, "title": "Brunei"}
-            ]
-          }  
-  },
-
-
-  "settings":{
-    "headerTitle":"Settings",
-     "textInputLabel":"Text Input",
-     "textInput":"Text Input",
-     "numberInputLabel": "Number Input",
-     "numberInput": "Number Input",
-     "selectInputLabel":"Select input",
-     "buttonText": "Submit",
-     "background":"assets/images/background/28.jpg",
-     "RadioButtonTitle": "Radio Button",
-     "SelectItems": [
-                    {
-                        "id": 31,
-                        "title": "Choose address"
-                    },
-                    {
-                        "id": 32,
-                        "title": "222 Duffield Street"
-                    },
-                    {
-                        "id": 34,
-                        "title": "198 Clark Street"
-                    },
-                    {
-                        "id": 33,
-                        "title": "588 Kenmore Terrace"
-                    }
-                ],
-
-      "toggle": {
-            "title": "Toggle",
-            "items": [
-                {
-                    "id": 0,
-                    "title": "United Kingdom",
-                    "isChecked": true
-                },
-                {
-                    "id": 1,
-                    "title": "South Africa",
-                    "isChecked": false
-                },
-                {
-                    "id": 2,
-                    "title": "Qatar",
-                    "isChecked": false
-                },
-                {
-                    "id": 3,
-                    "title": "Philippines",
-                    "isChecked": true
-                },
-                {
-                    "id": 4,
-                    "title": "New Zealand",
-                    "isChecked": true
-                }
-            ]
-        },
-        "radio": {
-          "title" : "Radio Buttons",
-            "selectedItem": 3,
-            "items" : [
-              {"id" : 1, "title": "The Gambia"},
-              {"id" : 2, "title": "Ecuador"},
-              {"id" : 4, "title": "Czechia"},
-              {"id" : 3, "title": "Brunei"}
-            ]
-          }  
-  },
-
-  "googleCards" : {
-
-
-     "actionSheet" : {
-        "buttons" : [ {
-          "role" : "destructive",
-          "text" : "Read more"
-        }, {
-          "text" : "Add to Favorites"
-        }, {
-          "text" : "Delete Card"
-        }, {
-          "text" : "Disable Card"
-        }, {
-          "role" : "cancel",
-          "text" : "Cancel"
-        } ],
-        "title" : "Choose what to do with this card?"
+{
+  "listItems": {
+    "textInputLabel": "Text Input",
+    "textInput": "Text Input",
+    "numberInputLabel": "Number Input",
+    "numberInput": "Number Input",
+    "selectInputLabel": "Select input",
+    "buttonText": "Submit",
+    "background": "assets/images/background/28.jpg",
+    "RadioButtonTitle": "Radio Button",
+    "SelectItems": [
+      {
+        "id": 31,
+        "title": "Choose address"
       },
-     
-     "items" : [ {
-       "button" : "Buy",
-       "description" : "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC",
-       "id" : 1,
-       "image" : "assets/images/background/6.jpg",
-       "price" : "$144.50",
-       "shareIcon" : "more",
-       "subtitle" : "Category: Watch",
-       "title" : "Digital Watch"
-     }, {
-       "button" : "$130.99",
-       "description" : "Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words",
-       "id" : 2,
-       "image" : "assets/images/background/9.jpg",
-       "price" : "$130.99",
-       "shareIcon" : "more",
-       "subtitle" : "Category: Watch",
-       "title" : "Android Watch"
-     }, {
-       "button" : "Buy",
-       "description" : "Icero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum",
-       "id" : 3,
-       "image" : "assets/images/background/10.jpg",
-       "price" : "$354.05",
-       "shareIcon" : "more",
-       "subtitle" : "Category: Guitars",
-       "title" : "Acoustic Guitars"
-     }, {
-       "button" : "Buy",
-       "description" : "Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
-       "id" : 4,
-       "image" : "assets/images/background/13.jpg",
-       "price" : "$338.99",
-       "shareIcon" : "more",
-       "subtitle" : "Category: Guitars",
-       "title" : "Bass guitar"
-     }, {
-       "button" : "Buy",
-       "description" : "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC",
-       "id" : 5,
-       "image" : "assets/images/background/15.jpg",
-       "price" : "$109.60",
-       "shareIcon" : "more",
-       "subtitle" : "Category: Guitars",
-       "title" : "Classical guitar"
-     } ]
- },
-
-  "login" : {
-   
-      "background" : "assets/images/background/28.jpg",
-      "errorPassword" : "Field can't be empty.",
-      "errorUser" : "Field can't be empty.",
-      "forgotPassword" : "Forgot password?",
-      "labelPassword" : "PASSWORD",
-      "labelUsername" : "USERNAME",
-      "login" : "Login",
-      "logo" : "assets/images/logo/1.png",
-      "password" : "Enter your password",
-      "register" : "Register",
-      "skip" : "Skip",
-      "subtitle" : "Welcome",
-      "title" : "Login to your account",
-      "username" : "Enter your username"
-    
+      {
+        "id": 32,
+        "title": "222 Duffield Street"
+      },
+      {
+        "id": 34,
+        "title": "198 Clark Street"
+      },
+      {
+        "id": 33,
+        "title": "588 Kenmore Terrace"
+      }
+    ],
+    "toggle": {
+      "title": "Toggle",
+      "items": [
+        {
+          "id": 0,
+          "title": "United Kingdom",
+          "isChecked": true
+        },
+        {
+          "id": 1,
+          "title": "South Africa",
+          "isChecked": false
+        },
+        {
+          "id": 2,
+          "title": "Qatar",
+          "isChecked": false
+        },
+        {
+          "id": 3,
+          "title": "Philippines",
+          "isChecked": true
+        },
+        {
+          "id": 4,
+          "title": "New Zealand",
+          "isChecked": true
+        }
+      ]
+    },
+    "radio": {
+      "title": "Radio Buttons",
+      "selectedItem": 3,
+      "items": [
+        {
+          "id": 1,
+          "title": "The Gambia"
+        },
+        {
+          "id": 2,
+          "title": "Ecuador"
+        },
+        {
+          "id": 4,
+          "title": "Czechia"
+        },
+        {
+          "id": 3,
+          "title": "Brunei"
+        }
+      ]
+    }
   },
-  "parallax" : {
-   
-      "headerImage" : "assets/images/background/9.jpg",
-      "headerTitle" : "Showbiz",
-      "items" : [ {
-        "button" : "READ",
-        "id" : 1,
-        "image" : "assets/images/avatar/9.jpg",
-        "imageAlt" : "avatar",
-        "subtitle" : "Aenean pretium nunc vel rhoncus.",
-        "title" : "Victoria Simpson"
-      }, {
-        "button" : "READ",
-        "id" : 2,
-        "image" : "assets/images/avatar/10.jpg",
-        "imageAlt" : "avatar",
-        "subtitle" : "Aenean pretium nunc vel rhoncus.",
-        "title" : "Samantha Reynolds"
-      }, {
-        "button" : "READ",
-        "id" : 3,
-        "image" : "assets/images/avatar/11.jpg",
-        "imageAlt" : "avatar",
-        "subtitle" : "Aenean pretium nunc vel rhoncus.",
-        "title" : "Stacey Harris"
-      }, {
-        "button" : "READ",
-        "id" : 4,
-        "image" : "assets/images/avatar/12.jpg",
-        "imageAlt" : "avatar",
-        "subtitle" : "Aenean pretium nunc vel rhoncus.",
-        "title" : "Jacqueline Guyon"
-      }, {
-        "button" : "READ",
-        "id" : 5,
-        "image" : "assets/images/avatar/13.jpg",
-        "imageAlt" : "avatar",
-        "subtitle" : "Aenean pretium nunc vel rhoncus.",
-        "title" : "Mia Langevoort"
-      }, {
-        "button" : "READ",
-        "id" : 6,
-        "image" : "assets/images/avatar/14.jpg",
-        "imageAlt" : "avatar",
-        "subtitle" : "Aenean pretium nunc vel rhoncus.",
-        "title" : "Amy Simsek"
-      }, {
-        "button" : "READ",
-        "id" : 7,
-        "image" : "assets/images/avatar/15.jpg",
-        "imageAlt" : "avatar",
-        "subtitle" : "Aenean pretium nunc vel rhoncus.",
-        "title" : "Charlotte Sital"
-      }, {
-        "button" : "READ",
-        "id" : 8,
-        "image" : "assets/images/avatar/16.jpg",
-        "imageAlt" : "avatar",
-        "subtitle" : "Aenean pretium nunc vel rhoncus.",
-        "title" : "Iria Padrón"
-      }, {
-        "button" : "READ",
-        "id" : 9,
-        "image" : "assets/images/avatar/17.jpg",
-        "imageAlt" : "avatar",
-        "subtitle" : "Aenean pretium nunc vel rhoncus.",
-        "title" : "Laura Sarabia"
-      }, {
-        "button" : "READ",
-        "id" : 10,
-        "image" : "assets/images/avatar/18.jpg",
-        "imageAlt" : "avatar",
-        "subtitle" : "Aenean pretium nunc vel rhoncus.",
-        "title" : "Alexia Bañuelos"
-      }, {
-        "button" : "READ",
-        "id" : 11,
-        "image" : "assets/images/avatar/19.jpg",
-        "imageAlt" : "avatar",
-        "subtitle" : "Aenean pretium nunc vel rhoncus.",
-        "title" : "Erika Quiroz"
-      }, {
-        "button" : "READ",
-        "id" : 12,
-        "image" : "assets/images/avatar/20.jpg",
-        "imageAlt" : "Presque Isle Harbor",
-        "subtitle" : "Aenean pretium nunc vel rhoncus.",
-        "title" : "Emma Banda"
-      } ],
-      "subtitle" : "Startup Pitches",
-      "title" : "Engage real-time"
-    
+  "settings": {
+    "headerTitle": "Settings",
+    "textInputLabel": "Text Input",
+    "textInput": "Text Input",
+    "numberInputLabel": "Number Input",
+    "numberInput": "Number Input",
+    "selectInputLabel": "Select input",
+    "buttonText": "Submit",
+    "background": "assets/images/background/28.jpg",
+    "RadioButtonTitle": "Radio Button",
+    "SelectItems": [
+      {
+        "id": 31,
+        "title": "Choose address"
+      },
+      {
+        "id": 32,
+        "title": "222 Duffield Street"
+      },
+      {
+        "id": 34,
+        "title": "198 Clark Street"
+      },
+      {
+        "id": 33,
+        "title": "588 Kenmore Terrace"
+      }
+    ],
+    "toggle": {
+      "title": "Toggle",
+      "items": [
+        {
+          "id": 0,
+          "title": "United Kingdom",
+          "isChecked": true
+        },
+        {
+          "id": 1,
+          "title": "South Africa",
+          "isChecked": false
+        },
+        {
+          "id": 2,
+          "title": "Qatar",
+          "isChecked": false
+        },
+        {
+          "id": 3,
+          "title": "Philippines",
+          "isChecked": true
+        },
+        {
+          "id": 4,
+          "title": "New Zealand",
+          "isChecked": true
+        }
+      ]
+    },
+    "radio": {
+      "title": "Radio Buttons",
+      "selectedItem": 3,
+      "items": [
+        {
+          "id": 1,
+          "title": "The Gambia"
+        },
+        {
+          "id": 2,
+          "title": "Ecuador"
+        },
+        {
+          "id": 4,
+          "title": "Czechia"
+        },
+        {
+          "id": 3,
+          "title": "Brunei"
+        }
+      ]
+    }
   },
-  
-  "register" : {
-   
-      "background" : "assets/images/background/2.jpg",
-      "city" : "Your home town",
-      "country" : "Where are you from?",
-      "email" : "Your e-mail address",
-      "errorCity" : "Field can't be empty.",
-      "errorCountry" : "Field can't be empty",
-      "errorEmail" : "Invalid email address.",
-      "errorPassword" : "Field can't be empty.",
-      "errorUser" : "Field can't be empty.",
-      "lableCity" : "CITY",
-      "lableCountry" : "COUNTRY",
-      "lableEmail" : "E-MAIL",
-      "lablePassword" : "PASSWORD",
-      "lableUsername" : "USERNAME",
-      "password" : "Enter your password",
-      "register" : "register",
-      "title" : "Register",
-      "toolbarTitle" : "Register + image",
-      "username" : "Enter your username"
-  
+  "googleCards": {
+    "actionSheet": {
+      "buttons": [
+        {
+          "role": "destructive",
+          "text": "Read more"
+        },
+        {
+          "text": "Add to Favorites"
+        },
+        {
+          "text": "Delete Card"
+        },
+        {
+          "text": "Disable Card"
+        },
+        {
+          "role": "cancel",
+          "text": "Cancel"
+        }
+      ],
+      "title": "Choose what to do with this card?"
+    },
+    "items": [
+      {
+        "button": "Buy",
+        "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC",
+        "id": 1,
+        "image": "assets/images/background/6.jpg",
+        "price": "$144.50",
+        "shareIcon": "more",
+        "subtitle": "Category: Watch",
+        "title": "Digital Watch"
+      },
+      {
+        "button": "$130.99",
+        "description": "Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words",
+        "id": 2,
+        "image": "assets/images/background/9.jpg",
+        "price": "$130.99",
+        "shareIcon": "more",
+        "subtitle": "Category: Watch",
+        "title": "Android Watch"
+      },
+      {
+        "button": "Buy",
+        "description": "Icero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum",
+        "id": 3,
+        "image": "assets/images/background/10.jpg",
+        "price": "$354.05",
+        "shareIcon": "more",
+        "subtitle": "Category: Guitars",
+        "title": "Acoustic Guitars"
+      },
+      {
+        "button": "Buy",
+        "description": "Here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+        "id": 4,
+        "image": "assets/images/background/13.jpg",
+        "price": "$338.99",
+        "shareIcon": "more",
+        "subtitle": "Category: Guitars",
+        "title": "Bass guitar"
+      },
+      {
+        "button": "Buy",
+        "description": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC",
+        "id": 5,
+        "image": "assets/images/background/15.jpg",
+        "price": "$109.60",
+        "shareIcon": "more",
+        "subtitle": "Category: Guitars",
+        "title": "Classical guitar"
+      }
+    ]
   },
-  
-  "wizard" : {
-    "btnFinish" : "Finish",
-      "btnNext" : "Next",
-      "items" : [ {
-        "backgroundImage" : "assets/images/background/30.jpg",
-        "subtitle" : "Cosmologist Stephen Hawking",
-        "title" : "Happy Anniversary, Juno! NASA Probe Marks 1 Year at Jupiter."
-      }, {
-        "backgroundImage" : "assets/images/background/27.jpg",
-        "subtitle" : "Bennu is an asteroid",
-        "title" : "Colorful Clouds on Jupiter by Juno"
-      }, {
-        "backgroundImage" : "assets/images/background/31.jpg",
-        "subtitle" : "Light elements clumpeds",
-        "title" : "Best Space Stories of The Week!"
-      } ]
-    
-  }
+  "login": {
+    "background": "assets/images/background/28.jpg",
+    "errorPassword": "Field can't be empty.",
+    "errorUser": "Field can't be empty.",
+    "forgotPassword": "Forgot password?",
+    "labelPassword": "PASSWORD",
+    "labelUsername": "USERNAME",
+    "login": "Login",
+    "logo": "assets/images/logo/1.png",
+    "password": "Enter your password",
+    "register": "Register",
+    "skip": "Skip",
+    "subtitle": "Welcome",
+    "title": "Login to your account",
+    "username": "Enter your username"
+  },
+  "parallax": {
+    "headerImage": "assets/images/background/9.jpg",
+    "headerTitle": "Showbiz",
+    "items": [
+      {
+        "button": "READ",
+        "id": 1,
+        "image": "assets/images/avatar/9.jpg",
+        "imageAlt": "avatar",
+        "subtitle": "Aenean pretium nunc vel rhoncus.",
+        "title": "Victoria Simpson"
+      },
+      {
+        "button": "READ",
+        "id": 2,
+        "image": "assets/images/avatar/10.jpg",
+        "imageAlt": "avatar",
+        "subtitle": "Aenean pretium nunc vel rhoncus.",
+        "title": "Samantha Reynolds"
+      },
+      {
+        "button": "READ",
+        "id": 3,
+        "image": "assets/images/avatar/11.jpg",
+        "imageAlt": "avatar",
+        "subtitle": "Aenean pretium nunc vel rhoncus.",
+        "title": "Stacey Harris"
+      },
+      {
+        "button": "READ",
+        "id": 4,
+        "image": "assets/images/avatar/12.jpg",
+        "imageAlt": "avatar",
+        "subtitle": "Aenean pretium nunc vel rhoncus.",
+        "title": "Jacqueline Guyon"
+      },
+      {
+        "button": "READ",
+        "id": 5,
+        "image": "assets/images/avatar/13.jpg",
+        "imageAlt": "avatar",
+        "subtitle": "Aenean pretium nunc vel rhoncus.",
+        "title": "Mia Langevoort"
+      },
+      {
+        "button": "READ",
+        "id": 6,
+        "image": "assets/images/avatar/14.jpg",
+        "imageAlt": "avatar",
+        "subtitle": "Aenean pretium nunc vel rhoncus.",
+        "title": "Amy Simsek"
+      },
+      {
+        "button": "READ",
+        "id": 7,
+        "image": "assets/images/avatar/15.jpg",
+        "imageAlt": "avatar",
+        "subtitle": "Aenean pretium nunc vel rhoncus.",
+        "title": "Charlotte Sital"
+      },
+      {
+        "button": "READ",
+        "id": 8,
+        "image": "assets/images/avatar/16.jpg",
+        "imageAlt": "avatar",
+        "subtitle": "Aenean pretium nunc vel rhoncus.",
+        "title": "Iria Padrón"
+      },
+      {
+        "button": "READ",
+        "id": 9,
+        "image": "assets/images/avatar/17.jpg",
+        "imageAlt": "avatar",
+        "subtitle": "Aenean pretium nunc vel rhoncus.",
+        "title": "Laura Sarabia"
+      },
+      {
+        "button": "READ",
+        "id": 10,
+        "image": "assets/images/avatar/18.jpg",
+        "imageAlt": "avatar",
+        "subtitle": "Aenean pretium nunc vel rhoncus.",
+        "title": "Alexia Bañuelos"
+      },
+      {
+        "button": "READ",
+        "id": 11,
+        "image": "assets/images/avatar/19.jpg",
+        "imageAlt": "avatar",
+        "subtitle": "Aenean pretium nunc vel rhoncus.",
+        "title": "Erika Quiroz"
+      },
+      {
+        "button": "READ",
+        "id": 12,
+        "image": "assets/images/avatar/20.jpg",
+        "imageAlt": "Presque Isle Harbor",
+        "subtitle": "Aenean pretium nunc vel rhoncus.",
+        "title": "Emma Banda"
+      }
+    ],
+    "subtitle": "Startup Pitches",
+    "title": "Engage real-time"
+  },
+  "register": {
+    "background": "assets/images/background/2.jpg",
+    "city": "Your home town",
+    "country": "Where are you from?",
+    "email": "Your e-mail address",
+    "errorCity": "Field can't be empty.",
+    "errorCountry": "Field can't be empty",
+    "errorEmail": "Invalid email address.",
+    "errorPassword": "Field can't be empty.",
+    "errorUser": "Field can't be empty.",
+    "lableCity": "CITY",
+    "lableCountry": "COUNTRY",
+    "lableEmail": "E-MAIL",
+    "lablePassword": "PASSWORD",
+    "lableUsername": "USERNAME",
+    "password": "Enter your password",
+    "register": "register",
+    "title": "Register",
+    "toolbarTitle": "Register + image",
+    "username": "Enter your username"
+  },
+  "wizard": {
+    "btnFinish": "Finish",
+    "btnNext": "Next",
+    "items": [
+      {
+        "backgroundImage": "assets/images/background/30.jpg",
+        "subtitle": "Cosmologist Stephen Hawking",
+        "title": "Happy Anniversary, Juno! NASA Probe Marks 1 Year at Jupiter."
+      },
+      {
+        "backgroundImage": "assets/images/background/27.jpg",
+        "subtitle": "Bennu is an asteroid",
+        "title": "Colorful Clouds on Jupiter by Juno"
+      },
+      {
+        "backgroundImage": "assets/images/background/31.jpg",
+        "subtitle": "Light elements clumpeds",
+        "title": "Best Space Stories of The Week!"
+      }
+    ]
+  },
+  "users": [
+    {
+      "username": "Shaharyar",
+      "password": "welcome",
+      "email": "shery_kirmani@gmail.com",
+      "id": 1
+    },
+    {
+      "username": "Shaharyar",
+      "password": "welcome",
+      "email": "shery_kirmani@gmail.com",
+      "id": 2
+    },
+    {
+      "username": "Ali ",
+      "password": "welcome",
+      "email": "ali@a.com",
+      "id": 3
+    },
+    {
+      "username": "Ali",
+      "password": "welcome",
+      "email": "ali@ali.com",
+      "id": 4
+    }
+  ],
+  "settingsData": [
+    {
+      "text": ",sdnsdn",
+      "number": "897987",
+      "selectedItem": "222 Duffield Street",
+      "selectRadio": "Ecuador",
+      "selectToggle": true,
+      "id": 1
+    },
+    {
+      "text": "sdjcnsd",
+      "number": "08098",
+      "selectedItem": "222 Duffield Street",
+      "selectRadio": "Czechia",
+      "selectToggle": true,
+      "id": 2
+    }
+  ],
+  "listItemData": [
+    {
+      "text": "kkjhkj",
+      "number": "987987",
+      "selectedItem": "198 Clark Street",
+      "selectRadio": "Brunei",
+      "selectToggle": true,
+      "id": 1
+    }
+  ]
 }

@@ -77,7 +77,7 @@ $palettes: (
       primary : #FFFFFF, // nova
       secondary: #F5F5F5,//nova
       secondaryBase: #BFC1C7, //nova
-      accent : #FB5135, //nova
+      accent : #3D90D1, //nova
       secondaryDark: #F3F3F3, //nova
       accentLight : #7F8490, //nova
       accentDark: #000000, //nova
@@ -88,7 +88,7 @@ $palettes: (
     textColors: (
       primary: #30384C, //nova
       secondary: #7F8490,//nova
-      accent : #FB5135, //nova
+      accent : #3D90D1, //nova
       secondaryBase: #FFFFFF, //nova
       accentLight: #8E8E93,//nova
       accentDark: #000, //nova
@@ -138,7 +138,7 @@ $global-opacity: (
 $colors: (
   primary : theme-colors('mainColors', 'accent'),
   secondary : theme-colors('textColors', 'secondary'),
-  light : #FF2D55,
+  light : #3D90D1,
 );
 
 .box-text {

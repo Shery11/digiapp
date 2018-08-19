@@ -14,6 +14,8 @@ export class DataProvider {
 
   URL = 'http://localhost:3000/';	
 
+ // URL = " https://1081c423.ngrok.io/";
+
   constructor(public http: HttpClient) {
     console.log('Hello DataProvider Provider');
     	
@@ -48,6 +50,26 @@ export class DataProvider {
 
   getSettingsData(){
     return this.http.get(this.URL+'settings')
+  }
+
+  registerUser(data){
+    return this.http.post(this.URL+'users',data)
+  }
+
+  loginUser(){
+    return this.http.get(this.URL+'users');
+  }
+
+  saveSettings(data){
+
+    return this.http.post(this.URL+'settingsData',data)
+
+  }
+
+  saveListItem(data){
+
+    return this.http.post(this.URL+'listItemData',data)
+
   }
 
 

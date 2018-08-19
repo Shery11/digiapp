@@ -1,6 +1,6 @@
 import { IntroPage } from './../pages/intro/intro';
 import { Component, ViewChild } from '@angular/core';
-import { Nav, Platform } from 'ionic-angular';
+import { Nav, Platform, AlertController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -14,11 +14,11 @@ import { SettingPage } from '../pages/setting/setting';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = IntroPage;
+  rootPage: any = SettingPage;
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen,public alertCtrl : AlertController) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -48,5 +48,29 @@ export class MyApp {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
+  }
+
+
+  logOut(){
+    let alert = this.alertCtrl.create({
+      title: 'Logout',
+      message: 'Are you sure?',
+      buttons: [
+        {
+          text: 'No',
+          role: 'cancel',
+          handler: () => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Yes',
+          handler: () => {
+           this.nav.setRoot(IntroPage);
+          }
+        }
+      ]
+    });
+    alert.present();
   }
 }

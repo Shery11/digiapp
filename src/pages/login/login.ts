@@ -1,6 +1,6 @@
 import { DataProvider } from './../../providers/data/data';
 import { Component,Input } from '@angular/core';
-import { IonicPage, NavController} from 'ionic-angular';
+import { IonicPage, NavController, ToastController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { RegisterPage } from '../register/register';
 
@@ -31,7 +31,7 @@ export class LoginPage {
     private isUsernameValid: boolean = true;
     private isPasswordValid: boolean = true;
 
-    constructor(public dataProvider: DataProvider,public navCtrl: NavController) { 
+    constructor(public dataProvider: DataProvider,public navCtrl: NavController,public toastCtrl:ToastController) { 
       this.dataProvider.getLoginData().subscribe(data=>{
         console.log(data);
         this.data = data
@@ -40,7 +40,17 @@ export class LoginPage {
 
     onEvent = (event: string): void => {
         if (event == "onLogin" && this.validate()) {
-            this.navCtrl.setRoot(HomePage);
+            this.dataProvider.loginUser().subscribe(data=>{
+               console.log(data);
+               if(this.checkUser(data,this.username,this.password)){
+                this.presentToast("User logged in")
+                  this.navCtrl.setRoot(HomePage);
+               }else{
+                 this.presentToast("Invalid Credentials")
+                 
+               }
+            })
+            
         }
         if (event == "onRegister") {
           this.navCtrl.push(RegisterPage);
@@ -62,6 +72,33 @@ export class LoginPage {
         console.log(this.isPasswordValid , this.isUsernameValid)
         return this.isPasswordValid && this.isUsernameValid;
      }
+
+
+
+     checkUser(data,username,password):boolean{
+       let userFound = false;
+       data.forEach(element => {
+
+        if(element.username==username&& element.password == password){
+          userFound = true;
+        }
+             
+       });
+
+       return userFound;
+     }
+
+
+
+     presentToast(message) {
+      let toast = this.toastCtrl.create({
+        message: message,
+        duration: 3000,
+        position: 'bottom'
+      });
+    
+      toast.present();
+    }
 
 
 }
