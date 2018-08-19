@@ -34,6 +34,23 @@ export class DataProvider {
   }
 
 
+  getHomeData(){
+    return this.http.get(this.URL+'parallax');
+  }
+
+  getListData(){
+    return this.http.get(this.URL+'googleCards')
+  }
+
+  getListItemData(){
+    return this.http.get(this.URL+'listItems')
+  }
+
+  getSettingsData(){
+    return this.http.get(this.URL+'settings')
+  }
+
+
 
 
 }

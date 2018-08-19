@@ -1,7 +1,7 @@
 import { HomePage } from './../home/home';
 import { DataProvider } from './../../providers/data/data';
 import { Component,Input } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController} from 'ionic-angular';
 
 /**
  * Generated class for the RegisterPage page.
@@ -41,7 +41,7 @@ export class RegisterPage {
   }
 
   onEvent = (event: string): void => {
-      if (event == "onRegister" && !this.validate()) {
+      if (event == "onRegister" && this.validate()) {
           this.navCrtl.setRoot(HomePage);
       }
      

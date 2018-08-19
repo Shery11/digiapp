@@ -1,6 +1,6 @@
 import { DataProvider } from './../../providers/data/data';
 import { Component,Input } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController} from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { RegisterPage } from '../register/register';
 

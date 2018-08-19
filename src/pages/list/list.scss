@@ -1,3 +1,57 @@
 page-list {
 
+    ion-card {
+      box-shadow: none !important;
+      border-radius: $border-radius !important;
+  
+      [card-image] {
+        position: relative;
+  
+        [title-block] {
+          position: absolute;
+          background: theme-colors('mainColors', 'accentDark', 0.6);
+          left: 0;
+          bottom: 0;
+          right: 0;
+          padding: 15px;
+        }
+      }
+  
+      ion-card-content {
+        overflow: hidden;
+  
+        [default-button] {
+          padding: 10px 20px !important;
+          font-size: $h4-font-size !important;
+          height: auto !important;
+        }
+      }
+      // Card Description
+      [card-subtitle] {
+        margin-bottom: 10px;
+        white-space: nowrap !important;
+        color: color($googleCard, card-subtitle-basic) !important;
+      }
+  
+      [card-title] {
+        white-space: nowrap !important;
+        color: color($googleCard, card-title-basic) !important;
+        width: 85%;
+      }
+  
+      [card-body-text] {
+        color: color($googleCard, card-description-basic) !important;
+      }
+    }
+  
+    [badge-clear] {
+      margin-top: 5px;
+    }
+  
+    [button-action-shit] {
+      color: color($buttonActionShit, color-primary) !important;
+    }
+
+  
+
 }

@@ -1,3 +1,4 @@
+import { IntroPage } from './../pages/intro/intro';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -5,10 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
-
-import { IntroPage } from '../pages/intro/intro';
-
-import { NativeStorage } from '@ionic-native/native-storage';
+import { SettingPage } from '../pages/setting/setting';
 
 @Component({
   templateUrl: 'app.html'
@@ -16,38 +14,29 @@ import { NativeStorage } from '@ionic-native/native-storage';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = HomePage;
+  rootPage: any = IntroPage;
 
   pages: Array<{title: string, component: any}>;
 
-  constructor(private storage: NativeStorage,public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
-      { title: 'Intro', component: IntroPage }
+      { title: 'Settings', component: SettingPage },
     ];
+
+
+    console.log("it ran")
 
   }
 
   initializeApp() {
+
     this.platform.ready().then(() => {
 
-        this.storage.getItem('introShown').then((result) => {
-         
-         console.log(result);
-        if(result){
-          this.rootPage = 'Tabs';
-        } else {
-          this.rootPage = 'Intro';
-          this.storage.setItem('introShown', true);
-        }
- 
-      
- 
-      });
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
       this.statusBar.styleDefault();

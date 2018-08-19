@@ -16,6 +16,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { NativeStorage } from '@ionic-native/native-storage';
 import { DataProvider } from '../providers/data/data';
+import { ListitemPage } from '../pages/listitem/listitem';
+import { SettingPage } from '../pages/setting/setting';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { DataProvider } from '../providers/data/data';
     ListPage,
     IntroPage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    ListitemPage,
+    SettingPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,9 @@ import { DataProvider } from '../providers/data/data';
     ListPage,
     IntroPage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    ListitemPage,
+    SettingPage
   ],
   providers: [
     StatusBar,
