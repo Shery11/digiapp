@@ -24,6 +24,7 @@ import { SettingPage } from '../pages/setting/setting';
     MyApp,
     HomePage,
     ListPage,
+    // comment these before building for prodution for PWA
     IntroPage,
     LoginPage,
     RegisterPage,

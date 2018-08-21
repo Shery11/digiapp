@@ -14,7 +14,7 @@ import { SettingPage } from '../pages/setting/setting';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = SettingPage;
+  rootPage: any = IntroPage;
 
   pages: Array<{title: string, component: any}>;
 

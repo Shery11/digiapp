@@ -6,7 +6,7 @@
     "numberInput": "Number Input",
     "selectInputLabel": "Select input",
     "buttonText": "Submit",
-    "background": "assets/images/background/28.jpg",
+    "background": "",
     "RadioButtonTitle": "Radio Button",
     "SelectItems": [
       {
@@ -87,7 +87,7 @@
     "numberInput": "Number Input",
     "selectInputLabel": "Select input",
     "buttonText": "Submit",
-    "background": "assets/images/background/28.jpg",
+    "background": "",
     "RadioButtonTitle": "Radio Button",
     "SelectItems": [
       {
@@ -237,7 +237,7 @@
     ]
   },
   "login": {
-    "background": "assets/images/background/28.jpg",
+    "background": "",
     "errorPassword": "Field can't be empty.",
     "errorUser": "Field can't be empty.",
     "forgotPassword": "Forgot password?",
@@ -450,6 +450,10 @@
       "selectRadio": "Brunei",
       "selectToggle": true,
       "id": 1
+    },
+    {
+      "selectToggle": false,
+      "id": 2
     }
   ]
 }

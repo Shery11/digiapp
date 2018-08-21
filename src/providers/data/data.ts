@@ -12,9 +12,9 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class DataProvider {
 
-  URL = 'http://localhost:3000/';	
+  // URL = 'http://localhost:3000/';	
 
- // URL = " https://1081c423.ngrok.io/";
+ URL = "https://888140e6.ngrok.io/";
 
   constructor(public http: HttpClient) {
     console.log('Hello DataProvider Provider');
